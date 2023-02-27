@@ -29,10 +29,12 @@ public class StockPriceHistory {
             from.roll(Calendar.YEAR, -1);
             Stock stock = YahooFinance.get(TICKER, true);
             List<HistoricalQuote> quoteList = stock.getHistory(from, DAILY);
-            HashMap<String, String> quoteMap = new HashMap<String, String>();
+            HashMap<String, String> quoteMap = new HashMap<String, String>(); 
+            // map is not necessary, data can be written from list
             String quote;
             String date;
             String price;
+            System.out.println("Writing " + TICKER + " stock history to 'StockQuotes.csv'...");
             File csvFile = new File("StockQuotes.csv");
             FileWriter writer = new FileWriter(csvFile);
             writer.write("Date,Closing Price\n");
