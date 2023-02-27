@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "libraries/jackson-annotations-2.9.0.jar",
+        "libraries/jackson-core-2.9.8.jar",
+        "libraries/jackson-databind-2.9.8.jar",
+        "libraries/log4j-1.2.16.jar",
+        "libraries/slf4j-api-1.7.31.jar",
+        "libraries/slf4j-nop-1.7.31.jar"
+    ]
+}
